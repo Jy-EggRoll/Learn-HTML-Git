@@ -1,30 +1,54 @@
-<!doctype html>
-<!-- 这是必不可少的开头 -->
-
-<html lang="en-US">
-<!-- 包含整个页面的所有内容,也被称为根元素 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <!-- 添加到界面中,而不向用户展示的元素 -->
-    <meta charset="utf-8" />
-    <!-- 选用utf-8编码,可以避免绝大多数问题 -->
-    <meta name="viewport" content="width=device-width" />
-    <!-- 调整合适的渲染宽度 -->
-    <title>HTML学习</title>
-    <!-- 页面的标题，显示在标签页上 -->
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapos.com/css?family=Open+Sans" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>蛋卷儿</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- 这是让用户看到的全部内容 -->
-    <h1>这是一个学习性质的网页</h1>
-    <img src="images/landscape.jpg" alt="landscape">
-    <ul>
-        <li>这是无序列表的第一项</li>
-        <li>这是无序列表的第二项</li>
-    </ul>
-    <p>这是<a href="https://www.baidu.com">百度</a>的网址</p>
+    <header>
+        <h1>欢迎来到我的网页</h1>
+    </header>
+    <main>
+        <h2>关于我</h2>
+        <p>你好，我是蛋卷儿，就读于北京邮电大学。我正在学习HTML和CSS等技术。得益于GitHub，我创建出了此页面。</p>
+        <h2>联系我</h2>
+        <p>你可以通过2139971764@qq.com联系我。</p>
+    </main>
+    <footer>
+        <p>版权所有 &copy; 2024 蛋卷儿</p>
+    </footer>
 </body>
 
 </html>
