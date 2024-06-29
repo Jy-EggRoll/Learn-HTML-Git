@@ -73,3 +73,49 @@ utf-8包含了人类语言中的大部分字符，可以很好地处理多语言
 
 ## 在你的站点添加自定义图标
 
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="icon" href="https://raw.githubusercontent.com/Jy-EggRoll/Learn-HTML-Git/main/images/logo.ico"
+        type="images/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>&lt;title&gt;element</title>
+</head>
+
+<body>
+    <h1>&lt;h1&gt;element</h1>
+</body>
+
+</html>
+```
+
+成功了！
+
+## 在HTML中应用CSS和JavaScript
+
+CSS可以使网页更加炫酷，JavaScript可以使网页拥有交互功能。他们分别使用`<link>`元素和`<script>`元素。
+
+- `<link>`元素位于文档的头部，它有两个属性，`rel="stylesheet"`表明这是文档的样式表，而`href`包含了样式表文件的路径。
+
+```HTML
+<link rel="stylesheet" href="my-css-file.css">
+```
+
+- `<script>`元素也在文档的头部，包含`src`属性，指向需要加载的JavaScript路径。同时，在后面加上defer以告诉浏览器，在加载完所有的HTML内容后再加载JavaScript，这样可以保证JavaScript试图访问的内容都已经存在，从而不会发生错误。有很多方法可以实现类似的效果，但是这是最可靠的方法。
+
+```HTML
+<script src="my-js-file.js" defer></script>
+```
+
+## 为文档设定主语言
+
+这个属性可以通过`<html>`中的`lang`属性来设置，这可以被搜索引擎更有效地搜索。当进行屏幕朗读时，这可能也会提供帮助。比如six在英语和法语中读音不同。
+
+文档可以分段设置不同语言。
+
+```HTML
+<p>Chinese:<span lang="zh_CN">你好。</span></p>
+```
