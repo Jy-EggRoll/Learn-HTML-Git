@@ -77,3 +77,21 @@
 如果`index.html`上传到了`project`这个目录，`project`位于web服务站点的根目录，web站点的域名为`https://www.example.com`，那么这个网站就可以通过`https://www.example.com/project/index.html`来访问（或者链接就是`https://www.example.com/project/`，大多数web服务器会默认加载`index.html`这类页面）。
 
 不管绝对URL在哪里使用，它总是指向确定的相同位置。
+
+相对URL：就是和当前的页面html文件处于同一文件夹的文件、文件夹，再继续衍生的位置。
+
+如果示例文件是`https://www.example.com/projects/index.html`，那么当前的目录就在`projects`下。如果`text.txt`文件位于和`index.html`相同的文件夹下，那么只要使用`text.txt`就能直接访问到这个文件，这就是相对URL。如果有一个文件夹`dir`位于和`index.html`相同的位置下，`dir`里面有一个`OK.txt`文件，那么我们可以用`dir/OK.txt`这个相对路径访问到这个文件。
+
+## 链接的最佳实践
+
+### 使用清晰的链接措辞
+
+直接把信息转化成链接，这比引导点击更合适。
+
+这是好的：
+
+```html
+<p><a href="https://www.baidu.com/">进入百度网站</a></p>
+```
+这是一般的：
+
