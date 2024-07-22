@@ -95,3 +95,52 @@
 ```
 这是一般的：
 
+```html
+<p><a href="https://www.baidu.com/">点击这里</a>进入百度</p>
+```
+
+![alt text](image.png)
+
+其他提示：
+
+- 不要在链接文本中直接体现出URL，这很丑。
+- 不要在文本中提示：链接到，这其实是无用的内容。不论是屏幕阅读器还是一般的视觉用户，他们都会很自然地觉得这是一个链接。这是因为链接的颜色一般和其他文本不一样，而且链接具有下划线。
+- 链接的标签应该尽可能短。
+- 尽量减少相同文本链接到不同地方的情况。如出现了多次“单机此处”，但是每一个都代表了不同的链接。
+
+### 链接到非HTML资源——留下清晰的提示
+
+当链接到一个需要下载的资源时，或者点击之后会进行一些行为（比如弹出一个窗口），应当使用更加明确的措辞，以减少混乱。
+
+![alt text](image-1.png)
+
+代码示例：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <p>
+        <a href="https://www.example.com/somepdf.pdf">下载一个PDF文件（10MB）</a>
+    </p>
+
+    <p>
+        <a href="https://www.example.com/video/" target="_blank">观看视频（将打开新标签页，高清）</a>
+    </p>
+</body>
+
+</html>
+```
+
+### 在下载链接时使用download属性
+
+```html
+<p>
+    <a href="https://www.example.com/something" download="MySoftWare.exe">下载我的软件（中文版，64位）</a>
+</p>
+```
